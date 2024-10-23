@@ -46,7 +46,7 @@
   --secondary-50: #EEF7FF;
 
   --primary-border-50: #a1a1aa;
-  --custom-blue: #0CA9EB; 
+  --custom-blue: #0CA9EB;
 }
 
 @media (prefers-color-scheme: dark) {

@@ -1,6 +1,6 @@
 // src/_app.tsx
 import { AppProps } from 'next/app';
-import '../globals.css'
+import '../styles/globals.css'
 import DefaultLayout from '@/components/layouts/DefaultLayout';
 
 
