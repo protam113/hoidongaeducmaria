@@ -70,6 +70,25 @@ const config: Config = {
         "primary-border-50": "var(--primary-border-50)",
         "custom-blue": "var(--custom-blue)",
       },
+      screens: {
+        sm: "640px", // Small devices (phones)
+        md: "768px", // Medium devices (tablets)
+        lg: "1024px", // Large devices (desktops)
+        xl: "1280px", // Extra large devices (large desktops)
+        "2xl": "1536px", // 2XL devices
+      },
+      fontSize: {
+        10: "10px",
+        12: "12px",
+        14: "14px",
+        16: "16px",
+        18: "18px",
+        20: "20px",
+        24: "24px",
+        26: "26px",
+        28: "28px",
+        30: "30px",
+      },
     },
   },
   plugins: [],
