@@ -65,7 +65,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between bg-white py-4 px-2 rounded-md shadow-md">
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between bg-white py-4 px-2 shadow-md">
                     <span className="text-sm text-gray-500 sm:text-center">
                         © 2024 <a href="https://www.facebook.com/XLR.Team" className="hover:underline">HOOKSTER</a> & <a href="https://flowbite.com/" className="hover:underline">DanhThuong</a>. All Rights Reserved.
                     </span>

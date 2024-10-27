@@ -14,6 +14,7 @@ const Hero = () => {
           width={700}
           objectFit="cover"
         />
+
         {/* Thông báo ở giữa hình ảnh */}
         <div className="relative">
           <div className="absolute bottom-20 left-[-20px] bg-secondary-50 p-4 rounded-lg text-black w-[350px] h-[300px] ">

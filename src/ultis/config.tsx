@@ -44,18 +44,33 @@ export const NavItems = () => {
                     link: '/hoi_dong/on_goi',
                     icon: MdOutlineEventNote,
 
+                },
+                {
+                    id: 11,
+                    label: "Sứ Vụ",
+                    link: '/hoi_dong/on_goi',
+                    icon: MdOutlineEventNote,
+
                 }
             ]
         },
         {
             id: 4,
             label: "Hoạt Động",
-            href: '/activity',
+            link: '/activity',
+            children: [
+                {
+                    id: 12,
+                    label: "Học Hỏi Kinh Thánh (AI)",
+                    link: '/hoi_dong/about_us',
+                    icon: MdGroups,
+                },
+            ]
         },
         {
             id: 6,
             label: "Quyền Góp",
-            href: '/donation',
+            link: '/donation',
         }
     ];
 };

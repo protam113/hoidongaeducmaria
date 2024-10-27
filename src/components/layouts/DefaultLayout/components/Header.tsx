@@ -22,7 +22,7 @@ type NavItem = {
 export const TopHeader = () => {
     return (
         <div
-            className="w-full mx-auto flex items-center justify-start py-4 text-black text-sm bg-white"
+            className="w-full px-8 mx-auto flex items-center justify-start py-4 text-black text-sm bg-white"
         >
             <div className="flex items-center gap-1">
                 <MdOutlineMail className="h-5 w-5" /> xlr.devteam03@devteam03gmail.com
@@ -56,11 +56,11 @@ export default function Navbar() {
     }
 
     return (
-        <div className="mx-auto flex w-full justify-between px-4 py-5 text-14 bg-primary-500">
+        <div className="sticky  mx-auto flex w-full justify-between px-8 py-3 text-14 bg-primary-500">
             {/* left side  */}
-            <section ref={animationParent} className="flex items-center justify-between gap-10 w-full">
+            <section ref={animationParent} className="flex items-center justify-between w-full">
                 {/* logo */}
-                <Image src={logo} alt="logo" height={100} width={150}/>
+                <Image src={logo} alt="logo" height={80} width={120}/>
                 {isSideMenuOpen && <MobileNav closeSideMenu={closeSideMenu}/>}
 
                 {/* Nav items */}
@@ -97,10 +97,14 @@ export default function Navbar() {
                 </div>
 
                 {/* right side data */}
-                <section className="hidden md:flex items-center gap-8">
+                <section className=" hidden md:flex   items-center gap-8 ">
+                    <button className="h-fit text-neutral-400 transition-all hover:text-black/90">
+                        Login
+                    </button>
+
                     <button
                         className="h-fit rounded-xl border-2 border-neutral-400 px-4 py-2 text-neutral-400 transition-all hover:border-black hover:text-black/90">
-                        Contact Us
+                        Register
                     </button>
                 </section>
 
@@ -118,15 +122,15 @@ function MobileNav({closeSideMenu}: { closeSideMenu: () => void }) {
     const navItems = NavItems();
 
     return (
-        <div className="fixed left-0 top-0 flex h-full min-h-screen w-full justify-end bg-black/60 md:hidden">
-            <div className="h-full w-[65%] bg-white px-4 py-4">
+        <div className="fixed left-0 top-0 flex h-full min-h-screen w-full justify-end bg-pr md:hidden text-black ">
+            <div className="h-full w-[65%] bg-white px-4 py-4 ">
                 <section className="flex justify-end">
                     <AiOutlineClose
                         onClick={closeSideMenu}
                         className="cursor-pointer text-4xl"
                     />
                 </section>
-                <div className="flex flex-col text-base gap-2 transition-all">
+                <div className="flex flex-col text-14 text-black gap-2 transition-all">
                     {navItems.map((d, i) => (
                         <SingleNavItem
                             key={i}
@@ -137,12 +141,13 @@ function MobileNav({closeSideMenu}: { closeSideMenu: () => void }) {
                         </SingleNavItem>
                     ))}
                 </div>
-                <section className="flex flex-col gap-8 mt-4 items-center">
+                <section className="  flex  flex-col   gap-8  mt-4 items-center">
                     <button className="h-fit text-neutral-400 transition-all hover:text-black/90">
                         Login
                     </button>
+
                     <button
-                        className="w-full max-w-[200px] rounded-xl border-2 border-neutral-400 px-4 py-2 text-neutral-400 transition-all hover:border-black hover:text-black/90">
+                        className="w-full  max-w-[200px]  rounded-xl border-2 border-neutral-400 px-4 py-2 text-neutral-400 transition-all hover:border-black hover:text-black/90">
                         Register
                     </button>
                 </section>
@@ -166,7 +171,7 @@ function SingleNavItem(d: NavItem) {
             href={d.link ?? "#"}
             className="relative px-2 py-3 transition-all"
         >
-            <p className="flex cursor-pointer items-center gap-2 text-neutral-400 group-hover:text-black">
+        <p className="flex cursor-pointer items-center gap-2 text-black group-hover:text-black">
                 <span>{d.label}</span>
                 {d.children && (
                     <IoIosArrowDown
@@ -180,7 +185,7 @@ function SingleNavItem(d: NavItem) {
                         <Link
                             key={i}
                             href={ch.link ?? "#"}
-                            className="flex cursor-pointer items-center py-1 pl-6 pr-8 text-neutral-400 hover:text-black"
+                            className="flex cursor-pointer items-center py-1 pl-6 pr-8 text-black hover:text-black"
                         >
                             <span className="whitespace-nowrap pl-3">{ch.label}</span>
                         </Link>
