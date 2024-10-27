@@ -1,5 +1,3 @@
-import Link from "next/link";
-import React from "react";
 import BlogLayoutThree from "@/components/layouts/components/BlogLayoutThree";
 
 const RecentPosts = () => {
