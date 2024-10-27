@@ -17,13 +17,13 @@ export default function Label({ children, color, nomargin = false, pill = false 
         pink: "text-pink-600"
     };
 
-    const bgColor = {
-        green: "bg-emerald-50",
-        blue: "bg-blue-50",
-        orange: "bg-orange-50",
-        purple: "bg-purple-50",
-        pink: "bg-pink-50"
-    };
+    // const bgColor = {
+    //     green: "bg-emerald-50",
+    //     blue: "bg-blue-50",
+    //     orange: "bg-orange-50",
+    //     purple: "bg-purple-50",
+    //     pink: "bg-pink-50"
+    // };
 
     if (pill) {
         return (

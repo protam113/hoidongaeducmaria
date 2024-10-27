@@ -22,7 +22,7 @@ export default function CategoryLabel({
                 <Link
                     href={`/category/${category.slug.current}`}
                     key={index}>
-                    <Label nomargin={nomargin} color={category.color}>
+                    <Label nomargin={nomargin} color={"blue"}>
                         {category.title}
                     </Label>
                 </Link>
