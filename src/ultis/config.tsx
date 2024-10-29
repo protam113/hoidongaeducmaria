@@ -19,6 +19,14 @@ export const NavItems = () => {
             key: 10,
             label: "Bài Viết",
             link: '/blog',
+            children: [
+                {
+                    id: 12,
+                    label: "Học Hỏi Kinh Thánh (AI)",
+                    link: '/hoi_dong/about_us',
+                    icon: MdGroups,
+                },
+            ]
         },
         {
             id: 3,
@@ -50,7 +58,6 @@ export const NavItems = () => {
                     label: "Sứ Vụ",
                     link: '/hoi_dong/on_goi',
                     icon: MdOutlineEventNote,
-
                 }
             ]
         },
